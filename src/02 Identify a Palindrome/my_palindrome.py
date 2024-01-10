@@ -1,6 +1,7 @@
 import math
 
 def clean_letters(string):
+  
   clean = []
   for ch in string:
     if ch.isalpha():
@@ -10,7 +11,7 @@ def clean_letters(string):
 
 def is_palindrome(string):
 
-  chars = clean_letters(string)
+  chars = [ch.lower() for ch in string if ch.isalpha()]
 
   i = 0
   j = -1
