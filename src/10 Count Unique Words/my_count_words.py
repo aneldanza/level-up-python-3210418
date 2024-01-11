@@ -17,4 +17,4 @@ def count_words(file_path):
       dict[word.lower()] = 1
       
   pairs = dict.items()
-  sorted_dict = sorted(pairs, key=lambda x=x[1])
+  sorted_dict = sorted(pairs, key=lambda x:x[1])
