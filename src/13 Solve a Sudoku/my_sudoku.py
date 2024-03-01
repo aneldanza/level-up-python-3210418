@@ -35,11 +35,9 @@ def is_in_line(row, col, num, puzzle):
 
 
 def is_in_section(row, col, num, puzzle, size=3):
-  # print(f'for cell [{row}, {col}] checking box:')
   for (i, j) in product(range(0, size), repeat=2):
     box_row = row - row % size + i
     box_col = col - col % size + j
-    # print(f'[{box_row}, {box_col}]')
     if puzzle[box_row][box_col] == num:
       return True
     
