@@ -94,7 +94,6 @@ def my_solve_sudoku(puzzle):
     possible_numbers = cells_to_fill[(row, col)]
     for num in possible_numbers:
         puzzle[row][col] = num
-
         trial = my_solve_sudoku(puzzle)
         if trial:
           return trial
